@@ -116,6 +116,8 @@ function getCategoryClassSuffix(category) {
         case 'Trasporti': return 'trasporti';
         case 'Tempo libero': return 'tempolibero';
         case 'Salute': return 'salute';
+        case 'Utenze': return 'utenze';
+        case 'Shopping': return 'shopping';
         default: return 'altro';
     }
 }

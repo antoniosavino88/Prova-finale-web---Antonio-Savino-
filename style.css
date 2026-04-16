@@ -100,6 +100,8 @@ body {
 .cat-trasporti { border-left-color: #06d6a0; }
 .cat-tempolibero { border-left-color: #118ab2; }
 .cat-salute { border-left-color: #073b4c; }
+.cat-utenze { border-left-color: #9b5de5; }
+.cat-shopping { border-left-color: #f15bb5; }
 .cat-altro { border-left-color: #6c757d; }
 
 .badge-casa { background-color: #ef476f; }
@@ -107,6 +109,8 @@ body {
 .badge-trasporti { background-color: #06d6a0; }
 .badge-tempolibero { background-color: #118ab2; }
 .badge-salute { background-color: #073b4c; }
+.badge-utenze { background-color: #9b5de5; }
+.badge-shopping { background-color: #f15bb5; }
 .badge-altro { background-color: #6c757d; }
 
 /* Micro-animations */
