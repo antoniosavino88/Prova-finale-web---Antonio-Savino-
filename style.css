@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
     background-color: var(--background);
     color: var(--text-primary);
     /* Subtle background pattern or gradient */
@@ -19,6 +19,16 @@ body {
 }
 
 /* Header styling */
+.header-fade {
+    background: linear-gradient(to bottom, rgba(24, 26, 27, 0.9) 30%, rgba(24, 26, 27, 0.4) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .bg-gradient-text {
     background: linear-gradient(135deg, var(--primary-color), var(--success-color));
     -webkit-background-clip: text;
