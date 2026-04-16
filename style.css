@@ -1,0 +1,135 @@
+/* style.css */
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --success-color: #4cc9f0;
+    --background: #f8f9fa;
+    --text-primary: #2b2d42;
+    --card-bg: rgba(255, 255, 255, 0.95);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    /* Subtle background pattern or gradient */
+    background-image: radial-gradient(circle at 10% 20%, rgba(67, 97, 238, 0.05) 0%, transparent 20%),
+                      radial-gradient(circle at 90% 80%, rgba(76, 201, 240, 0.05) 0%, transparent 20%);
+    background-attachment: fixed;
+}
+
+/* Header styling */
+.bg-gradient-text {
+    background: linear-gradient(135deg, var(--primary-color), var(--success-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card Enhancements */
+.card {
+    border-radius: 16px;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+}
+
+.summary-card.bg-success {
+    background: linear-gradient(135deg, #4cc9f0, #4895ef) !important;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Form controls */
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+}
+
+/* Button Enhancements */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+}
+
+/* Expense List Cards */
+.expense-card {
+    border-left: 5px solid var(--primary-color);
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+.expense-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
+}
+
+/* Category Colors */
+.cat-casa { border-left-color: #ef476f; }
+.cat-cibo { border-left-color: #ffd166; }
+.cat-trasporti { border-left-color: #06d6a0; }
+.cat-tempolibero { border-left-color: #118ab2; }
+.cat-salute { border-left-color: #073b4c; }
+.cat-altro { border-left-color: #6c757d; }
+
+.badge-casa { background-color: #ef476f; }
+.badge-cibo { background-color: #ffd166; color: #000 !important; }
+.badge-trasporti { background-color: #06d6a0; }
+.badge-tempolibero { background-color: #118ab2; }
+.badge-salute { background-color: #073b4c; }
+.badge-altro { background-color: #6c757d; }
+
+/* Micro-animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Utilities */
+.action-btn i {
+    transition: transform 0.2s;
+}
+.action-btn:hover i {
+    transform: scale(1.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8; 
+}
