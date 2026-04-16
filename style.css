@@ -88,10 +88,15 @@ body {
 .expense-card {
     border-left: 5px solid var(--primary-color);
     animation: slideIn 0.3s ease-out forwards;
+    position: relative;
+    z-index: 1;
 }
 
-.expense-card:hover {
+.expense-card:hover,
+.expense-card:focus-within,
+.expense-card:has(.show) {
     box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
+    z-index: 10;
 }
 
 /* Category Colors */
