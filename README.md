@@ -7,10 +7,14 @@ Una piccola ma potente **Single Page Application (SPA)** progettata per registra
 ## 🚀 Caratteristiche e Funzionalità Principali
 
 - **CRUD Completo:** L'utente può Creare, Leggere, Aggiornare (tramite Modale contestuale) ed Eliminare facilmente ogni singola spesa senza ricaricare la pagina principale.
+
 - **Riepilogo Dinamico:** Un header reattivo mostra l'importo totale accumulato e il conteggio di quante spese figurano in lista; ogni operazione aggiorna i dati all'istante.
+
 - **Filtri e Ricerca Avanzata:** Puoi ricercare spese specifiche tramite il form testuale oppure isolare l'intera lista per specifiche macro-categorie:
   - `Casa`, `Cibo`, `Trasporti`, `Tempo libero`, `Salute`, `Utenze`, `Shopping`, e `Altro`.
+
 - **Persistenza Locale (Bonus):** Lo stato dell'applicazione è gestito in JS e sincronizzato istantaneamente col *LocalStorage* del browser. Chiudendo la tab i dati non verranno persi, tornando accessibili alla prossima sessione.
+
 - **Micro-Animazioni e UI Premium:**
   - Font dinamico e nitido (`Outfit`).
   - Effetti "vetro smerigliato" per la nav-bar in dissolvenza fissa (`backdrop-filter`) studiati per le sovrapposizioni e lo scroll-depth.
@@ -48,6 +52,3 @@ Nessuna complessa installazione o dipendenza NodeJS esterna necessaria (poiché 
 1. **Clona o scarica** la cartella sul tuo PC.
 2. Fai **doppio clic** sul file `index.html` e consenti al tuo Browser web standard di aprirlo (raccomandato Chrome, Edge, Firefox, o Safari moderno).
 3. **Aggiungi una Spesa**: Sulla colonna adiacente compila accuratamente i quattro input cardine e premi il tasto "Aggiungi". Goditi la responsività!
-
----
-> Progetto di Fine Modulo - Web Developer Baseline
