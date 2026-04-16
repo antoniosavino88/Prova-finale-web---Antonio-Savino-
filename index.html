@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +15,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light text-dark">
+<body class="text-body">
     <!-- Header -->
-    <header class="py-4 shadow-sm mb-4 bg-white">
+    <header class="py-4 shadow-sm mb-4 bg-body-tertiary">
         <div class="container d-flex justify-content-between align-items-center">
             <h1 class="h3 mb-0 fw-bold bg-gradient-text"><i class="bi bi-wallet2 me-2"></i>Le Mie Spese</h1>
             <div class="user-profile">
@@ -95,7 +95,7 @@
                         <div class="row g-3">
                             <div class="col-md-7">
                                 <div class="input-group">
-                                    <span class="input-group-text bg-white"><i class="bi bi-search text-muted"></i></span>
+                                    <span class="input-group-text bg-body-tertiary"><i class="bi bi-search text-muted"></i></span>
                                     <input type="text" class="form-control" id="search-input" placeholder="Cerca per descrizione...">
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                             <input type="date" class="form-control" id="edit-data" required>
                         </div>
                         <div class="d-flex justify-content-end gap-2">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Annulla</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
                             <button type="submit" class="btn btn-primary fw-bold">Salva Modifiche</button>
                         </div>
                     </form>

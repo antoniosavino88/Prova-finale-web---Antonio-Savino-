@@ -161,7 +161,7 @@ function renderExpenses() {
             card.innerHTML = `
                 <div class="card-body p-3 d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center gap-3">
-                        <div class="d-none d-sm-flex flex-column align-items-center justify-content-center bg-light rounded px-3 py-2 text-center" style="min-width: 70px;">
+                        <div class="d-none d-sm-flex flex-column align-items-center justify-content-center bg-body-secondary rounded px-3 py-2 text-center" style="min-width: 70px;">
                             <span class="small fw-semibold text-uppercase text-muted">${new Date(exp.data).toLocaleDateString('it-IT', {month:'short'})}</span>
                             <span class="fs-5 fw-bold leading-none">${new Date(exp.data).getDate()}</span>
                         </div>
@@ -176,7 +176,7 @@ function renderExpenses() {
                     <div class="d-flex align-items-center gap-2 gap-sm-3">
                         <h5 class="mb-0 fw-bold">${formatCurrency(exp.importo)}</h5>
                         <div class="dropdown">
-                            <button class="btn btn-sm btn-light rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-sm btn-secondary rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-three-dots-vertical"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end shadow border-0">

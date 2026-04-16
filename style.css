@@ -1,11 +1,11 @@
 /* style.css */
 :root {
-    --primary-color: #4361ee;
-    --secondary-color: #3f37c9;
-    --success-color: #4cc9f0;
-    --background: #f8f9fa;
-    --text-primary: #2b2d42;
-    --card-bg: rgba(255, 255, 255, 0.95);
+    --primary-color: #e5a910;
+    --secondary-color: #d4930d;
+    --success-color: #f1c40f;
+    --background: #181a1b;
+    --text-primary: #e8e6e3;
+    --card-bg: rgba(36, 39, 41, 0.95);
 }
 
 body {
@@ -13,8 +13,8 @@ body {
     background-color: var(--background);
     color: var(--text-primary);
     /* Subtle background pattern or gradient */
-    background-image: radial-gradient(circle at 10% 20%, rgba(67, 97, 238, 0.05) 0%, transparent 20%),
-                      radial-gradient(circle at 90% 80%, rgba(76, 201, 240, 0.05) 0%, transparent 20%);
+    background-image: radial-gradient(circle at 10% 20%, rgba(229, 169, 16, 0.05) 0%, transparent 20%),
+                      radial-gradient(circle at 90% 80%, rgba(241, 196, 15, 0.05) 0%, transparent 20%);
     background-attachment: fixed;
 }
 
@@ -49,14 +49,14 @@ body {
 /* Form controls */
 .form-control, .form-select {
     border-radius: 8px;
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--bs-border-color);
     padding: 0.75rem 1rem;
     transition: all 0.2s;
 }
 
 .form-control:focus, .form-select:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(229, 169, 16, 0.25);
 }
 
 /* Button Enhancements */
@@ -71,7 +71,7 @@ body {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+    box-shadow: 0 5px 15px rgba(229, 169, 16, 0.3);
 }
 
 /* Expense List Cards */
@@ -124,12 +124,12 @@ body {
     width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #1e2022; 
 }
 ::-webkit-scrollbar-thumb {
-    background: #c1c1c1; 
+    background: #4a4d52; 
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8; 
+    background: #6c757d; 
 }
